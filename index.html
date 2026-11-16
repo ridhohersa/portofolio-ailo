@@ -1,0 +1,21 @@
+<!doctype html>
+<html lang="id">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>Ailo Portfolio</title>
+<meta name="description" content="Ailo — portofolio digital Muhammad Ridho Hersa, UI/UX Designer. Designing beyond the interface.">
+<meta name="color-scheme" content="light dark">
+<script>
+/* Pasang tema sebelum halaman digambar, supaya tidak berkedip. Pilihan manual (localStorage) menang; tanpa pilihan, ikuti sistem. */
+(function(){try{var t=localStorage.getItem("ailo-theme");if(t!=="dark"&&t!=="light")t=matchMedia("(prefers-color-scheme:dark)").matches?"dark":"light";document.documentElement.dataset.theme=t}catch(e){}})();
+</script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;700&family=Inter:wght@400;500&family=Instrument+Serif:ital@1&family=IBM+Plex+Mono:wght@400&display=swap" rel="stylesheet">
+</head>
+<body>
+<div id="root"></div>
+<script type="module" src="/src/main.jsx"></script>
+</body>
+</html>

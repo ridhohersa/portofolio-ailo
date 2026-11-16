@@ -1,0 +1,152 @@
+<!doctype html><html><head><meta charset=utf8><meta name=viewport content="width=device-width,initial-scale=1,viewport-fit=cover"><style>:root{color-scheme:light;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}html{scroll-padding-top:env(safe-area-inset-top,0px)}body{margin:0;padding:0;font:14px -apple-system,BlinkMacSystemFont,sans-serif;background:#fff;color:#000}img{max-width:100%}[hidden]:not([hidden=until-found i]){display:none!important}</style></head><body>
+<title>Ailo Portfolio</title>
+<meta name="description" content="Ailo — portofolio digital Muhammad Ridho Hersa, UI/UX Designer. Designing beyond the interface.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;700&family=Inter:wght@400;500&family=Instrument+Serif:ital@1&family=IBM+Plex+Mono:wght@400&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+
+<a class="skip" href="#main">Lewati ke konten</a>
+<header class="top">
+<a class="logo" href="#home" aria-label="Ailo, beranda">Ailo</a>
+<nav aria-label="Navigasi utama">
+<a class="l" href="#about">About</a><a class="l" href="#skills">Skills</a><a class="l" href="#projects">Projects</a><a class="l" href="#testimonials">Testimonials</a><a class="l" href="#journal">Journal</a><a class="l" href="#cv">CV</a><a class="l" href="#contact">Contact</a>
+<button class="tbtn" id="theme" aria-label="Ganti tema terang atau gelap">Tema</button>
+</nav>
+</header>
+<main id="main">
+<section class="hero" id="home" aria-labelledby="h1">
+<h1 id="h1"><span><i>Designing</i></span><span><i>beyond the</i></span><span><i>interface.</i></span></h1>
+<div class="fl f1" aria-hidden="true"><i></i></div><div class="fl f2" aria-hidden="true"><i></i></div><div class="fl f3" aria-hidden="true"><i></i></div>
+<div class="meta">
+<div class="avatar"><img src="assets/images/avatar.png" alt="Foto Muhammad Ridho Hersa"></div>
+<div class="intro">
+<p class="serif in" style="animation-delay:.6s">Muhammad Ridho Hersa</p>
+<p class="in" style="animation-delay:.75s">Kelas XII PPLG A · Pengembangan Perangkat Lunak dan Gim. UI/UX Designer.</p>
+<p class="in" style="animation-delay:.9s">Pribadi kreatif dan adaptif yang tertarik pada desain, teknologi, dan pengembangan ide.</p>
+<div class="btns in" style="animation-delay:1.05s">
+<a class="btn pri" href="#projects">Lihat portofolio</a>
+<a class="btn" href="#cv">Lihat CV</a>
+<a class="btn" href="#contact">Hubungi saya</a>
+</div>
+</div>
+</div>
+</section>
+
+<section class="s" id="about" aria-labelledby="ab">
+<div class="grid">
+<div class="about-l"><h2 id="ab">About</h2><p class="label">Biografi</p></div>
+<div class="about-r">
+<p>Senang mempelajari hal baru, mengeksplorasi berbagai pendekatan, dan mengubah gagasan menjadi sesuatu yang bernilai. Terbiasa bekerja dengan perhatian pada detail, rasa ingin tahu yang tinggi, dan mampu beradaptasi di berbagai situasi dan lingkungan kerja.</p>
+<p class="label">Perjalanan</p>
+<ol class="tl">
+<li><strong>SMKN 2 Banjarmasin</strong> · Juli 2024 – sekarang<br>Program Keahlian PPLG. Fokus pada desain UI/UX dan desain grafis, dengan dasar pengembangan web (HTML, CSS, JavaScript, PHP, MySQL), serta fotografi, desain grafis, dan penyuntingan video lewat kegiatan sekolah dan organisasi.</li>
+<li><strong>Desainer UI/UX, Cloverdev</strong> · Juli – September 2025<br>Merancang antarmuka dan pengalaman pengguna untuk situs web dan aplikasi: wireframe, prototipe, dan desain UI di Figma.</li>
+<li><strong>Desainer UI/UX, Ailourus</strong> · Juli – September 2026<br>Merancang antarmuka dan pengalaman pengguna untuk proyek situs web, dengan wireframe, prototipe, dan desain UI di Figma.</li>
+<li><strong>OSIS SMKN 2 Banjarmasin</strong> · Seksi Bidang IPTEK<br>Aktif di kegiatan sekolah, khususnya desain, dokumentasi, dan materi visual.</li>
+<li><strong>Sertifikasi</strong><br>Kompetisi Business Model Canvas (BMC), pelatihan desain UI/UX, dan TOEIC skor 710.</li>
+<li><strong>Tujuan karier</strong><br>Berniat masuk ke agensi kreatif, baik sebagai UI/UX designer maupun desainer grafis, dan terbuka untuk menjajal 3D meski bukan bidang utama.</li>
+</ol>
+</div>
+</div>
+</section>
+
+<section class="s dark" id="skills" aria-labelledby="sk">
+<h2 id="sk">Skills</h2>
+<p><span class="ph">Contoh nilai — ganti dengan nilai asli</span></p>
+<div class="cols" id="skillcols"></div>
+</section>
+
+<section class="s" id="projects" aria-labelledby="pj">
+<h2 id="pj">Projects</h2>
+<div class="tools">
+<input id="q" type="search" placeholder="Cari judul, deskripsi, atau teknologi" aria-label="Cari proyek">
+<div id="chips" role="group" aria-label="Filter kategori"></div>
+</div>
+<div class="projects" id="plist" aria-live="polite"></div>
+</section>
+
+<section class="s dark" id="testimonials" aria-labelledby="th">
+<h2 id="th">Testimonials</h2>
+<p><span class="ph">Contoh — belum ada testimoni asli</span></p>
+<figure class="tq" id="tq" aria-live="polite"></figure>
+<div class="tnav"><button type="button" class="btn" id="tprev">Sebelumnya</button><span class="label" id="tcount"></span><button type="button" class="btn" id="tnext">Berikutnya</button></div>
+<div class="tform"><div><h3 style="font:700 1.8rem var(--display);margin:0 0 .5rem">Kirim kesanmu</h3><p>Singkat saja. Tampil setelah disetujui admin.</p></div>
+<form id="tf" novalidate>
+<div class="frow">
+<div class="fg"><label for="tn">Nama</label><input id="tn" name="name" autocomplete="name"><span class="err" data-e="name"></span></div>
+<div class="fg"><label for="tr">Hubungan</label><select id="tr" name="rel"><option value="">Pilih</option><option>Teacher</option><option>Supervisor</option><option>Friend</option><option>Client</option><option>User</option></select><span class="err" data-e="rel"></span></div>
+</div>
+<div class="fg"><label for="tt">Kesan</label><textarea id="tt" name="txt" rows="3"></textarea><span class="err" data-e="txt"></span></div>
+<input class="hp" name="website" tabindex="-1" autocomplete="off" aria-hidden="true">
+<button class="btn pri" id="tsend" type="submit">Kirim</button>
+<p class="msg" id="tmsg" role="status"></p>
+</form></div>
+</section>
+
+<section class="s" id="journal" aria-labelledby="jh">
+<h2 id="jh">Journal</h2>
+<p>Catatan, eksperimen, dan proses belajar. <span class="ph">Artikel contoh — ganti dengan tulisan asli</span></p>
+<div class="tools"><input id="jq" type="search" placeholder="Cari artikel" aria-label="Cari artikel"><div id="jchips" role="group" aria-label="Filter kategori artikel"></div></div>
+<div class="jgrid" id="jlist" aria-live="polite"></div>
+<p style="margin-top:2rem"><button class="btn" id="jmore" hidden>Muat lebih banyak</button></p>
+</section>
+
+<section class="s dark" id="cv" aria-labelledby="cvh">
+<h2 id="cvh">CV</h2>
+<p>Muhammad Ridho Hersa, siswa PPLG SMKN 2 Banjarmasin dan UI/UX Designer. Pribadi kreatif dan adaptif yang tertarik pada desain, teknologi, dan pengembangan ide.</p>
+<p class="label">SMKN 2 Banjarmasin, PPLG · Juli 2024 – sekarang<br>Desainer UI/UX, Ailourus · Juli – September 2026<br>Desainer UI/UX, Cloverdev · Juli – September 2025</p>
+<p class="btns"><a class="btn pri" href="#cv-detail">Detail CV</a></p>
+</section>
+
+<section class="s" id="contact" aria-labelledby="ct">
+<h2 id="ct">Contact</h2>
+<ul class="links">
+<li><a href="mailto:ridhohersa110@gmail.com">Email <span style="font:400 1rem var(--mono)">ridhohersa110@gmail.com</span></a></li>
+<li><a href="https://www.behance.net/ridhohersa1" target="_blank" rel="noopener">Behance <span style="font:400 1rem var(--mono)">behance.net/ridhohersa1</span></a></li>
+<li><a href="#contact">GitHub <span class="ph">tautan belum diisi</span></a></li>
+<li><a href="#contact">Instagram <span class="ph">tautan belum diisi</span></a></li>
+<li><a href="#contact">LinkedIn <span class="ph">tautan belum diisi</span></a></li>
+</ul>
+</section>
+<section class="s" id="detail" aria-label="Detail proyek"><a class="btn" href="#projects">← Kembali ke galeri</a><div id="dh"></div><div id="dbody"></div></section>
+<section class="s" id="adetail" aria-label="Artikel"><a class="btn" href="#journal">Kembali ke Journal</a><article id="ad"></article></section>
+<section class="s dark" id="cvdetail" aria-label="Detail CV"><a class="btn" href="#cv">Kembali ke CV</a>
+<h2 tabindex="-1">Detail CV</h2>
+<p class="btns"><a class="btn pri" href="assets/cv/CV_Muhammad_Ridho_Hersa.pdf" download>Unduh CV (PDF)</a></p>
+<div class="cols cvd">
+<div>
+<p class="label">Tentang saya</p>
+<p>Pribadi kreatif dan adaptif yang tertarik pada desain, teknologi, dan pengembangan ide. Senang mempelajari hal baru, mengeksplorasi berbagai pendekatan, dan mengubah gagasan menjadi sesuatu yang bernilai. Terbiasa bekerja dengan perhatian pada detail, rasa ingin tahu yang tinggi, dan mampu beradaptasi di berbagai situasi dan lingkungan kerja.</p>
+<p class="label">Pengalaman kerja</p>
+<h3>Desainer UI/UX, Ailourus</h3><p class="label">Juli 2026 – September 2026</p>
+<ul><li>Merancang antarmuka dan pengalaman pengguna untuk berbagai proyek situs web.</li><li>Membuat wireframe, prototipe, dan desain antarmuka menggunakan Figma.</li><li>Berkolaborasi mengembangkan konsep dan kebutuhan visual proyek agar sesuai dengan kebutuhan pengguna dan tujuan proyek.</li></ul>
+<h3>Desainer UI/UX, Cloverdev</h3><p class="label">Juli 2025 – September 2025</p>
+<ul><li>Merancang antarmuka dan pengalaman pengguna untuk berbagai proyek situs web dan aplikasi.</li><li>Membuat wireframe, prototipe, dan desain antarmuka menggunakan Figma.</li><li>Berkolaborasi mengembangkan konsep dan kebutuhan visual proyek agar sesuai dengan kebutuhan pengguna dan tujuan proyek.</li></ul>
+<p class="label">Pendidikan</p>
+<h3>SMKN 2 Banjarmasin</h3><p class="label">Juli 2024 – sekarang</p>
+<p>Program Keahlian Pengembangan Perangkat Lunak dan Gim (PPLG)</p>
+<ul><li>Berfokus pada kompetensi desain UI/UX dan desain grafis.</li><li>Pengetahuan dasar pengembangan web: HTML, CSS, JavaScript, PHP, dan MySQL.</li><li>Mengembangkan keterampilan fotografi, desain grafis, dan penyuntingan video lewat kegiatan sekolah dan organisasi.</li></ul>
+</div>
+<div>
+<p class="label">Keterampilan teknis</p><p>Fotografi, desain grafis, desain UI/UX, penyuntingan video, HTML, CSS, PHP, dan MySQL.</p>
+<p class="label">Bahasa</p><p>Bahasa Indonesia dan bahasa Inggris.</p>
+<p class="label">Sertifikasi</p>
+<ul><li>Sertifikat Kompetisi Business Model Canvas (BMC)</li><li>Sertifikat pelatihan desain UI/UX</li><li>Sertifikat TOEIC, skor 710</li></ul>
+<p class="label">Pengalaman dan aktivitas</p>
+<p>Aktif dalam kegiatan organisasi dan kepanitiaan sekolah, khususnya desain, dokumentasi, dan penyediaan materi visual untuk berbagai kegiatan. OSIS SMKN 2 Banjarmasin, Seksi Bidang IPTEK.</p>
+<p class="label">Kontak</p>
+<p><a href="mailto:ridhohersa110@gmail.com">ridhohersa110@gmail.com</a><br><a href="https://www.behance.net/ridhohersa1" target="_blank" rel="noopener">behance.net/ridhohersa1</a></p>
+</div>
+</div>
+</section>
+</main>
+<footer><span>Ailo — Digital Portfolio</span><span>Muhammad Ridho Hersa · XII PPLG A</span></footer>
+<button id="top" aria-label="Kembali ke atas">↑</button>
+<div id="wipe" aria-hidden="true"></div>
+<div id="cur" aria-hidden="true"></div>
+<div id="egg" role="dialog" aria-label="Easter egg" tabindex="-1">Halo, kamu menemukan Ailo.</div>
+<script src="js/data.js"></script>
+<script src="js/main.js"></script>
+
+</body></html>
