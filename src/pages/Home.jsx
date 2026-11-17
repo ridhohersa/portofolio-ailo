@@ -139,7 +139,7 @@ function Blog(){
   const meta=a=><p className="label bp-m"><span>{a.kind?a.kind+" · ":""}{a.cat}</span><span>{fd(a.d)}</span></p>;
   return <section className="s bp" id="blog" aria-labelledby="jh">
     <Reveal as="h2" id="jh"><Hl>Blog</Hl></Reveal>
-    <Reveal as="p" className="bp-lead" delay={.1}>Catatan, eksperimen, dan proses belajar. <span className="ph">Artikel contoh — ganti dengan tulisan asli</span></Reveal>
+    <Reveal as="p" className="bp-lead" delay={.1}>Catatan, eksperimen, dan proses belajar.</Reveal>
     {feat?<div className="bp-grid">
       <MLink to={"/blog/"+feat.slug} className="bp-f" variants={pv} initial="hidden" whileInView="show" whileHover="hover" whileFocus="hover" viewport={{once:true,amount:"some"}}>
         <Cover a={feat} ratio="r169" v={pc}/>
