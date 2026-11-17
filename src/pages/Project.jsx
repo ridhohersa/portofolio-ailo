@@ -29,7 +29,7 @@ export default function Project(){
         <motion.p initial={{opacity:0,y:16,filter:"blur(6px)"}} animate={{opacity:1,y:0,filter:"blur(0px)",transitionEnd:{filter:"none"}}} transition={{duration:.7,delay:t0,ease:EASE}}>{p.d}</motion.p>
       </div>
     </div>
-    <div id="dbody">{p.link&&<p><a className="btn" href={p.link} {...(/^https?:/i.test(p.link)?{target:"_blank",rel:"noopener noreferrer"}:{})}>Lihat proyek ↗</a></p>}
+    <div id="dbody">{p.link&&<p><a className="btn" href={p.link} {...(/^https?:/i.test(p.link)?{target:"_blank",rel:"noopener noreferrer"}:{})}>{p.linkLabel||"Lihat proyek"} ↗</a></p>}
     {!p.full&&!p.sec&&p.gallery&&p.gallery.length?p.gallery.map(g=><Reveal key={g.src} as="figure" v="scale" viewport={VP} className="fig full"><img src={g.src} alt={g.alt||"Gambar "+p.t} loading="lazy"/></Reveal>)
       :p.full?<Reveal as="figure" v="scale" viewport={VP} className="fig full"><img src={p.full} alt={p.fullAlt||"Studi kasus "+p.t} width="851" height="8000"/></Reveal>
       :SECT.map((s,k)=>p.hide&&p.hide.includes(s)?null:<Fragment key={s}><Reveal as="h4" v="left" viewport={VP}><Hl>{SECL[k]}</Hl></Reveal><Reveal viewport={VP}>{p.sec&&p.sec[s]?<div dangerouslySetInnerHTML={{__html:p.sec[s]}}/>:<p><span className="ph">Placeholder</span> Isi bagian ini dengan konten asli.</p>}</Reveal></Fragment>)}</div>

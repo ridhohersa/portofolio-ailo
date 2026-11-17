@@ -9,7 +9,7 @@ import {EDUCATION,EXPERIENCE,ORGANIZATION,CERTIFICATE,EXPERTISE,SKILL,CONTACT,sp
 
 const esc=s=>String(s).replace(/[&<>"']/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]));
 export const slugOf=t=>String(t||"").toLowerCase().replace(/[^a-z0-9]+/g,"-").replace(/^-+|-+$/g,"");
-const EXTRA=["col","ease","dur","kind","dir","lag","full","fullAlt","pos","hide","sec"];
+const EXTRA=["linkLabel","col","ease","dur","kind","dir","lag","full","fullAlt","pos","hide","sec"];
 const STATIC_BY_SLUG=Object.fromEntries(STATIC_PROJECTS.map(p=>[slugOf(p.t),p]));
 
 // ---------- pemetaan murni (diuji di Node) ----------
@@ -49,7 +49,7 @@ export function projectsFrom(list){
   if(!Array.isArray(list)||!list.length)return STATIC_PROJECTS;
   return list.map((r,i)=>{
     const st=STATIC_BY_SLUG[r.slug]||STATIC_BY_SLUG[slugOf(r.title)]||{};
-    const p={i,slug:r.slug,t:r.title,c:r.category||"",d:r.description||r.short_description||"",tech:r.tech||[],img:r.thumbnail||st.img||"",link:r.project_url||""};
+    const p={i,slug:r.slug,t:r.title,c:r.category||"",d:r.description||r.short_description||"",tech:r.tech||[],img:r.thumbnail||st.img||"",link:r.project_url||st.link||""};
     EXTRA.forEach(k=>{if(st[k]!=null)p[k]=st[k]});
     return p;
   });
