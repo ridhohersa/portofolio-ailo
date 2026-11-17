@@ -20,7 +20,7 @@ function Archive(){
   return <section className="s" id="blog" aria-labelledby="jh">
     <Link className="btn" to="/" style={{marginBottom:"2rem"}}>← Kembali ke Beranda</Link>
     <Reveal as="h2" id="jh"><Hl>Blog</Hl></Reveal>
-    <Reveal as="p" delay={.1}>Catatan, eksperimen, dan proses belajar. <span className="ph">Artikel contoh — ganti dengan tulisan asli</span></Reveal>
+    <Reveal as="p" delay={.1}>Catatan, eksperimen, dan proses belajar.</Reveal>
     <Reveal className="tools" delay={.18}><input value={q} onChange={e=>{setQ(e.target.value);setN(3)}} type="search" placeholder="Cari artikel" aria-label="Cari artikel"/>
       <div id="jchips" role="group" aria-label="Filter kategori artikel">{["Semua",...CATS].map(c=><button key={c} className="chip" aria-pressed={c===cat} onClick={()=>{setCat(c);setN(3)}}>{c}</button>)}</div></Reveal>
     <motion.div className="jgrid" layout aria-live="polite">
